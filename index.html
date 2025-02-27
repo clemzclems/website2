@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: goldenrod;">
+            <a class="navbar-brand" href="#">
+                <img src="reg.jpg" alt="Church Logo" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" 
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: white;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-color: aqua;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="color: crimson;">Welcome to Our Church</h1>
+                    <p style="color: navy;">Join us in worship and spiritual growth. Experience divine transformation.</p>
+                    <button class="btn" style="background-color: crimson; color: white;" onclick="scrollToAbout()">Learn More</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="pastor1.jpg" alt="Pastor 1" width="150" height="150">
+                    <img src="pastor2.jpg" alt="Pastor 2" width="150" height="150">
+                    <img src="pastor3.jpg" alt="Pastor 3" width="150" height="150">
+                    <img src="pastor4.jpg" alt="Pastor 4" width="150" height="150">
+                    <img src="pastor5.jpg" alt="Pastor 5" width="150" height="150">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about" style="background-color: lightgoldenrodyellow;">
+        <div class="container">
+            <h2 style="color: darkblue;">About Our Pastor</h2>
+            <p style="color: darkslategray;">
+                Our pastor is a **visionary leader, a passionate teacher, and a devoted shepherd** who has dedicated his life to spreading the gospel. 
+                His **wisdom, humility, and unwavering faith** inspire countless lives. 
+                He is supported by his wonderful wife, a **loving mother** and a pillar of faith who nurtures the church family with grace and kindness.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" style="background-color: lightgray;">
+        <div class="container">
+            <h2 style="color: darkblue;">Get in Touch</h2>
+            <p style="color: darkslategray;">We'd love to hear from you! Reach out with any questions or prayer requests.</p>
+            <form id="contact-form" action="https://formspree.io/f/mwpvdgeo" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required pattern="[a-zA-Z ]+">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" 
+                        required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="background-color: darkblue; color: white;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript Form Handling & Smooth Scroll -->
+    <script>
+        // Contact Form Submission
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            fetch('https://formspree.io/f/mwpvdgeo', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    form.reset(); // Clear form after successful submission
+                } else {
+                    alert('Error sending message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert('Error sending message. Please try again.');
+            });
+        });
+
+        // Smooth scroll to About Us when Learn More button is clicked
+        function scrollToAbout() {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+</html>
