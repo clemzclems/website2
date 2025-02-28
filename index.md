@@ -4,8 +4,7 @@ Sure! Below is a **comprehensive church document** in **GitHub Flavored Markdown
 
 # **AWAKE CHRISTIAN GOSPEL MINISTRY INT'L**  
 *Bringing Light to the World*  
-![Church Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)  
-
+![Church Logo](https://raw.githubusercontent.com/clemzclems/website2/refs/heads/main/reg.jpg)
 ---
 
 ## **📜 Church Attendance & Contribution Report**  
