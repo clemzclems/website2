@@ -1,3 +1,8 @@
-title: School Website  
-theme: minima  
-markdown: kramdown
+title: Awake Christian Gospel Ministry  
+description: "Official website of Awake Christian Gospel Ministry"  
+baseurl: ""  
+url: "https://clemzclems.github.io/website2"  
+remote_theme: jekyll/minima  
+plugins:
+  - jekyll-feed  
+  - jekyll-seo-tag
