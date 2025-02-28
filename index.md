@@ -1,11 +1,12 @@
 Sure! Below is a **comprehensive church document** in **GitHub Flavored Markdown (GFM)** incorporating **all 25 elements** (plus additional enhancements) while maintaining a structured and professional format.
 
 ---
-
 # **AWAKE CHRISTIAN GOSPEL MINISTRY INT'L**  
 *Bringing Light to the World*  
-![Church Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)  
 
+[![Church Logo](/assets/images/reg.jpg)](/)  
+
+---
 ---
 
 ## **📜 Church Attendance & Contribution Report**  
