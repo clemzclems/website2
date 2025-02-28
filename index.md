@@ -1,12 +1,15 @@
-Sure! Below is a **comprehensive church document** in **GitHub Flavored Markdown (GFM)** incorporating **all 25 elements** (plus additional enhancements) while maintaining a structured and professional format.
-
+---
+layout: post
+title: "Church Attendance & Contribution Report"
+date: 2025-02-28
+categories: church report
+author: "Awake Christian Gospel Ministry Int'l"
+image: "/reg.jpg"
 ---
 
 # **AWAKE CHRISTIAN GOSPEL MINISTRY INT'L**  
 *Bringing Light to the World*  
-![Church Logo](https://raw.githubusercontent.com/clemzclems/website2/refs/heads/main/reg.jpg)
----
-
+![Church Logo](/reg.jpg)
 ## **📜 Church Attendance & Contribution Report**  
 📅 **Date:** 2025-02-25  
 ⏳ **Time:** 9:00 AM - 12:30 PM  
