@@ -1,0 +1,6 @@
+title: My Jekyll Website
+author: Clement
+description: A simple Jekyll website for GitHub Pages.
+baseurl: "" # Leave empty unless using a subpath
+url: "https://your-username.github.io"
+theme: theme: jekyll-theme-dinky # You can change the theme later
