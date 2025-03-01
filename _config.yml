@@ -3,10 +3,14 @@ description: "Official website of Awake Christian Gospel Ministry"
 baseurl: ""  
 url: "https://clemzclems.github.io/website2"  
 remote_theme: jekyll/minima  
+
+markdown: kramdown  
+
 plugins:
   - jekyll-feed  
-  - jekyll-seo-tag
-  defaults:
+  - jekyll-seo-tag  
+
+defaults:
   - scope:
       path: ""
     values:
