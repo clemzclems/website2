@@ -1,4 +1,11 @@
 
+---
+layout: post
+title: "Church Program Information"
+date: 2025-03-01
+categories: church
+---
+
 ### **🏫 School Updates**  
 
 ## **📌 Students' Results - Term 2**  
