@@ -1,9 +1,7 @@
 
 ---
-layout: post
-title: "Church Program Information"
-date: 2025-03-01
-categories: church
+layout: default
+title: Church Program Information
 ---
 
 ### **🏫 School Updates**  
